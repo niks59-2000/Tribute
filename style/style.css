@@ -1,0 +1,184 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    font-family:"Poppins",sans-serif;
+    font-size:1rem;
+}
+/**navigation**/
+
+.navbar{
+    display:flex;
+    background-color:black;
+    flex-direction:row;
+    /* width:100%; */
+    justify-content:center;
+    text-transform: uppercase;
+}
+.navbar a{
+    color:white;
+    text-decoration:none;
+    padding:1rem;
+    font-size:1.1rem;
+}
+.navbar a:hover{
+    border-bottom:1px solid #ccc;
+}
+/**************************************************/
+
+/** heading & background **/
+.container{
+    display:flex;
+    flex-direction:column; 
+    color:white;
+    background-image:url('images/ty.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    justify-content:center;
+}
+.heading{
+    text-transform: uppercase;
+    line-height:1.5;
+}
+.heading h1{
+    font-size:4rem;  
+}
+.heading h4{
+    font-size:1rem;
+}
+.heading h1,.heading h4{
+    padding:5px 12px;
+    margin:10px 50px; 
+    letter-spacing:5px;
+}
+/*********************************************************/
+
+/** biography**/
+.bio{
+    display: flex;
+    flex-direction:row;
+    min-height:50vh;
+}
+.col1{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    padding:1.5rem;
+    flex:0 0 70%;
+}
+.col1 h2{
+    font-size:2.5rem;
+    margin:15px 0;
+    text-transform: uppercase;
+}
+
+.col2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+    background-color:purple;
+    padding:1.5rem;
+    flex:0 0 30%;
+    font-weight:bold;
+    color:white;
+}
+.col1 p,.col2 p{
+    font-size:1.2rem;
+    text-indent:50px;
+    text-align:justify;
+    line-height:1.5;
+}
+
+.btn{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:1.2rem;
+    text-align:center;
+    padding:10px 20px;
+}
+.btn a{
+    text-decoration: none;
+    color:purple;
+    font-weight:bold;
+    text-align:center;
+    border:2px solid purple;
+    border-radius:30px;
+    padding:15px;
+    width:200px;
+}
+.btn a:hover{
+    color:white;
+    background-color:purple;
+    transition: 2s;
+}
+/********************************************************/
+
+
+/*************************************************************/
+/** footer**/
+.footer-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#333;
+    padding: 20px;
+    text-align: center;
+    font-size:1.2rem;
+    min-height:30vh;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display:flex;
+    flex-flow:row wrap;  
+}
+
+.footer-nav li {
+    display: flex;
+    margin-right: 15px;
+}
+.footer-nav a {
+   color:#ddd;
+    text-decoration: none;
+}
+.footer-nav a:hover {
+    color:white;
+}
+
+.item3 img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    padding:5px;
+}
+.item1{
+    padding:15px;
+    text-align:center;
+    color:white;
+    display:inline-flex;
+    align-items:center;
+}
+.item1>div{
+    padding-right:1em;
+}
+.item1 img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding:5px;
+}
+
+.icons{
+    filter:invert(100%);
+}

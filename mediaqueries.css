@@ -1,0 +1,26 @@
+@media screen and (max-width:900px)
+{
+.bio{
+    flex-direction:column;
+}
+.col2{
+    padding:5rem;
+}
+.achievements{
+    margin:0 20px;
+}
+.discography{
+    margin:0 20px;
+}
+}
+
+@media screen and (max-width:680px)
+{
+.wrapper{
+    flex-direction: column;
+}
+.achievements{
+    justify-content: center;
+    align-items: center;
+}
+}

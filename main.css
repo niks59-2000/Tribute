@@ -1,0 +1,406 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    font-family:"Poppins",sans-serif;
+    font-size:1rem;
+}
+
+/**navigation**/
+
+.navbar{
+    display:flex;
+    background-color:black;
+    flex-direction:row;
+    /* width:100%; */
+    justify-content:center;
+    text-transform: uppercase;
+}
+
+.navbar a{
+    color:#ddd;
+    text-decoration:none;
+    padding:1rem;
+    font-size:1.1rem;
+}
+
+.navbar a:hover{
+    color:white;
+}
+
+/**************************************************/
+
+/** heading & background **/
+.container{
+    display:flex;
+    position: relative;
+    flex-direction:column; 
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    padding:20px;
+    text-align: center;
+    color:white;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/ty.jpg') no-repeat center center/cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.container .heading {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    line-height:1.5;
+}
+
+.heading h1{
+    font-size:4rem;  
+}
+
+.heading h1,.heading h4{
+    /* padding:5px 12px; */
+    /* margin:10px 50px;  */
+    letter-spacing:5px;
+}
+
+/*********************************************************/
+
+/** biography**/
+.bio{
+    display: flex;
+    flex-direction:row;
+    min-height:50vh;
+}
+
+.col1{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:1.5rem;
+    flex:0 0 70%;
+    margin:50px 0;
+}
+
+.col1 h2{
+    font-size:2.2rem;
+    margin:15px 0;
+    text-transform: uppercase;
+}
+
+.col2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+    background-color:purple;
+    padding:1.5rem;
+    flex:0 0 30%;
+    font-weight:bold;
+    color:white;
+}
+
+.col1 p,.col2 p{
+    font-size:1.2rem;
+    text-indent:50px;
+    text-align:justify;
+    line-height:1.5;
+}
+
+.btn{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:1.2rem;
+    text-align:center;
+    padding:10px 20px;
+}
+
+.btn a{
+    text-decoration: none;
+    color:purple;
+    font-weight:bold;
+    text-align:center;
+    border:2px solid purple;
+    border-radius:30px;
+    padding:15px;
+    width:200px;
+}
+
+.btn a:hover{
+    color:white;
+    background-color:purple;
+    transition: 1s;
+}
+/********************************************************/
+
+
+/*************************************************************/
+
+
+/* CAREER */
+
+
+.career-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:1.1rem;
+}
+
+.career-container h2{
+    font-size:2.2rem;
+    text-transform:uppercase;
+    padding:1.1rem;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction:row;
+    
+}
+
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius:10px;
+    margin:20px;
+    padding:2rem;
+    background-color: lightgray;
+    max-width:1000px;
+}
+
+.content h4{
+    font-size:1.5rem;
+    text-transform: uppercase;
+    margin:15px 0;
+    text-align: center;
+    color:purple;
+}
+
+.career-container ul li{
+    font-size:1.2rem;
+    margin-left:10px;
+    padding:0 15px;
+    line-height: 1.5;
+}
+
+.career-container p a{
+    color:grey;
+}
+
+.row1,.row2{
+    flex:0 0 50%;
+    font-size:1.2rem;
+}
+
+
+
+/*******************************************************/
+
+/* Achievements */
+
+.achieve-heading{
+    padding:1.3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2.2rem;
+    text-align:center;
+    color:black;
+    text-transform:uppercase;
+}
+.title{
+    color:purple;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+.achievements {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    max-width:1200px;
+    margin: 20px auto;
+}
+.achieve{
+    background-color:lightgrey;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 1.3rem;
+    text-align: center;
+    width: 300px;
+     display: flex;
+    flex-direction:column;
+}
+
+.details{
+   flex:1;
+}
+
+
+.achieve img {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    align-self:center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.awards{
+    margin: 10px 0;
+    color: #666;
+    font-size:1rem;
+    text-align:center;
+}
+
+.description{
+    margin: 5px 0;
+    color: #333;
+    font-size:1.125rem;
+    text-align:center;
+}
+/*******************************************************/
+
+/* Discography */
+
+.disco-heading{
+    text-align:center;
+    font-size:2.2rem;
+    text-transform:uppercase;
+    color:black;
+    padding:1.1rem;
+}
+.discography{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    max-width:1200px;
+    margin: 20px auto;
+}
+
+.album {
+    background-color:#ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.album img {
+    border-radius: 4px;
+    max-width: 50%;
+    height: auto;
+}
+
+.album-titles{
+    margin-top: 10px;
+    font-size: 1.5em;
+    /* color: #333; */
+    color:purple;
+}
+
+.release ,.tracks{
+    margin: 5px 0;
+    color: #666;
+    font-size:1rem;
+}
+.tracks{
+    font-size: 1.05rem;
+}
+/** footer**/
+.footer-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#333;
+    padding: 20px;
+    text-align: center;
+    font-size:1.2rem;
+    min-height:30vh;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display:flex;
+    flex-flow:row wrap;  
+}
+
+.footer-nav li {
+    display: flex;
+    margin-right: 15px;
+}
+
+.footer-nav a {
+   color:#ddd;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color:white;
+}
+
+.item3 img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    padding:5px;
+}
+
+.item1{
+    padding:15px;
+    text-align:center;
+    color:white;
+    display:inline-flex;
+    align-items:center;
+}
+
+.item1>div{
+    padding-right:1em;
+}
+
+.item1 img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding:5px;
+}
+
+/* icons */
+.icons{
+    filter:invert(100%);
+}

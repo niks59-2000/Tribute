@@ -1,0 +1,153 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+}
+body{
+    margin:0;
+    font-family:"Poppins", sans-serif;
+}
+
+
+/************************************************************/
+
+/** career **/
+
+.career-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:1.1rem;
+}
+.career-container h2{
+    font-size:2.5rem;
+    text-transform:uppercase;
+    padding:1.1rem;
+}
+.content h4{
+    font-size:1.5rem;
+    text-transform: uppercase;
+    margin:15px 0;
+    text-align: center;
+    color:purple;
+}
+.career-container ul li{
+    font-size:1.2rem;
+    margin-left:10px;
+    padding:0 15px;
+    line-height: 1.5;
+}
+.career-container p a{
+    color:grey;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction:row;
+    
+}
+.row1,.row2{
+    flex:0 0 50%;
+    font-size:1.2rem;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius:10px;
+    margin:20px;
+    padding:1rem;
+    background-color: lightgray;
+    max-width:1000px;
+}
+
+/*******************************************************/
+
+/** footer**/
+
+.footer-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:#333;
+    color:white;
+    padding: 20px;
+    text-align: center;
+    font-size:1.2rem;
+    min-height:30vh;
+}
+.footer-container p{
+    color:lightgrey;
+}
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display:flex;
+    flex-flow:row wrap;  
+}
+
+.footer-nav li {
+    display: flex;
+    margin-right: 15px;
+}
+.footer-nav a {
+    color:#ddd;
+    text-decoration: none;
+}
+.footer-nav a:hover {
+    color:white;
+}
+
+.item3 img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding:5px;
+}
+.item1{
+    padding:15px;
+    text-align:center;
+    color:white;
+    display:inline-flex;
+    align-items:center;
+}
+.item1>div{
+    padding-right:1em;
+}
+.item1 img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding:5px;
+}
+.icons{
+    filter:invert(100%);
+}
+/*****************************************************/
+
+/* *media queries for career* */
+/* 
+@media screen and (min-width:400px) and (max-width:600px){
+
+    .container{
+        flex-direction:column;
+    }
+    .row2{
+        margin-top:-40px;
+    }
+    .footer-container{
+        min-height:60vh;
+    }
+    .footer-nav {
+        display:flex;
+       flex-flow:column;
+    }
+    .item2{
+        display:flex;
+    }
+    .item1{
+        display:flex;
+        align-items:center;
+        padding-right:1em;
+    }
+} */
